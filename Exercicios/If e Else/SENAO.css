@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+body{
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding: 0 .2rem;
+}
+
+button{
+    height: 35px;
+    width: 130px;
+    padding: 2px;
+    cursor: pointer;
+    background-image: linear-gradient(86deg, #00d4ff,#0096be,#014b71,#39aac0);
+    background-size: 400% 100%;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    animation: botao 6s linear infinite;
+    margin-top: .3rem;
+}
+
+.notas button{
+    margin-top: .4rem;
+}
+
+@keyframes botao {
+    0%{background-position-x: 100%;}
+    100%{background-position: 400%;}
+}
+
+.notas{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+select{
+    width: 220px;
+    cursor: pointer;
+    width: 130px;
+    text-align: center;
+}
+
+label{
+    padding: .2rem 0;
+}
+
+input[type="number"]{
+    width: 130px;
+    padding: 0 .2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.senha{
+    margin-top: .5rem;
+}

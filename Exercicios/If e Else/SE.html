@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se e Senão</title>
+    <link rel="stylesheet" href="SENAO.css">
+</head>
+<body>
+    <!--Exercicio 1 - Validador de idade -->
+    <h2>Validador de Idade</h2>
+    <label for="idade">Qual sua idade?</label><br>
+    <input type="number" id="idade"><br>
+    <button onclick="validador()">Validar idade</button>
+    <p id="mostrarIdade"></p><br>
+
+    <!--Exercicio 2 - Impar ou par-->
+    <h2>Impar ou Par</h2>
+    <label for="impar">Validador de impar ou par</label><br>
+    <input type="number" id="impar"><br>
+    <button onclick="ImparPar()">Validar número</button>
+    <p id="par"></p>
+
+
+
+
+    <!--Exercicio 3 - Se for acima de R$ 100,00, aplique 10% de desconto.
+    Caso contrário, aplique 5% de desconto.-->
+    <h2>Desconto por preço</h2>
+    <label for="desconto">Digite o valor do seu produto: </label><br>
+    <input type="number" name="desconto" id="desconto"><br>
+    <button onclick="descontado()">Ver desconto total</button>
+    <p id="mostrarDesconto"></p><br>
+
+    <!--Exercicio 4 -Nota Final: Peça duas notas ao usuário e calcule a média-->
+    <div class="notas">
+        <h2>Calculando a média final</h2>
+        <p>Escolha a matéria:</p>
+        <select name="notas" id="notas">
+            <option value="portugues">Português</option>
+            <option value="matematica">Matematica</option>
+            <option value="historia">História</option>
+            <option value="geografia">Geografia</option>
+        </select>
+
+        <label for="nota1">Digite a nota do 1° bimestre</label>
+        <input type="number" placeholder="Digite a nota aqui" id="n1">
+
+        <label for="nota1">Digite a nota do 2° bimestre</label>
+        <input type="number" placeholder="Digite a nota aqui" id="n2">
+
+        <label for="nota1">Digite a nota do 3° bimestre</label>
+        <input type="number" placeholder="Digite a nota aqui" id="n3">
+
+        <label for="nota1">Digite a nota do 4° bimestre</label>
+        <input type="number" placeholder="Digite a nota aqui" id="n4">
+        <button onclick="calcular()">Calcular nota</button>
+        <p id="resultado"></p>
+        <p id="media"></p>
+    </div>
+
+
+    <!--Exercicio 5 - Verificador de Senha
+Peça para o usuário digitar uma senha.
+
+    Se for "1234", exiba "Acesso permitido ✅".
+    Caso contrário, exiba "Senha incorreta ❌".-->
+    <div class="senha">
+        <h2>Acessar senha:</h2>
+
+        <label for="senha">Digite a senha: </label><br>
+        <input type="password" maxlength="3" id="nome"><br>
+        <button onclick="acessar()">Validar senha</button>
+        <p id="acesso"></p>
+        <p id="acesso2"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
