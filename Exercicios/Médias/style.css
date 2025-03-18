@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, #E40303,#FF8C00,#FFED00,#008026,#004CFF,#732982);
+    background-size: 400% 100%;
+    animation: lgtv 5s linear infinite;
+}
+
+@keyframes lgtv {
+    0%{background-position-x: 0%;}
+    100%{background-position: 400%;}
+}
+
+h2{
+    padding: 1rem;
+    animation: teste 5s linear infinite;
+    transition: 3s;
+}
+
+@keyframes teste {
+    10%{color: red;}
+    20%{color: blue;}
+    30%{color: green;}
+    40%{color: yellow;}
+    50%{color: pink;}
+    60%{color: purple;}
+    70%{color: rgb(201, 39, 201);}
+    80%{color: rgb(5, 230, 5);}
+    90%{color: orange;}
+    100%{color: darkturquoise;}
+}
