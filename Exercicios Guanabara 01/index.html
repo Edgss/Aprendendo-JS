@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header> <h1>Trabalhando Dados em javascript <i class="bi bi-box"></i></h1>
+    </header>
+    <div class="testes">
+        <!--Mudando o nome pós botão-->
+        <div class="botao-nome">
+            <h2>Mudando o texto</h2>
+            <p>O texto abaixo mudará ao clicar o botão</p>
+            <button onclick="alterarTexto()">Alterar texto</button>
+            <p id="textoNome">Aqui vai aparecer o resultado...</p>
+        </div>
+        <!--Dobro e metade-->
+        <div class="metadinha">
+            <h2>Dobro e metade</h2>
+            <label for="">Digite aqui um número</label><br>
+            <input type="number" id="dobro-metade">
+            <button onclick="dobroMetade()">Calcular</button>
+            <p id="resultado_dobro"></p>
+        </div>
+        <div class="media-Escolar">
+            <h2>Calcular média escolar</h2>
+            <p>Escolha sua matéria e descubra se voce passou, está de recuperação ou se está reprovado</p>
+            <select name="notas" id="materias">
+                <option value="port">Português</option>
+                <option value="mat">Matematica</option>
+                <option value="hist">História</option>
+                <option value="geo">Geografia</option>
+                <option value="ciencia">Ciências</option>
+            </select><br>
+
+            <label for="materia1">Digite a nota do 1° bimestre</label><br>
+            <input type="number" id="n1"><br>
+
+            <label for="materia2">Digite a nota do 2° bimestre</label><br>
+            <input type="number" id="n2"><br>
+
+            <label for="materia3">Digite a nota do 3° bimestre</label><br>
+            <input type="number" id="n3"><br>
+
+            <label for="materia4">Digite a nota do 4° bimestre</label><br>
+            <input type="number" id="n4"><br><br>
+
+            <button onclick="mediaEscolar()">Calcular média</button>
+
+            <p id="aprovacao"></p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

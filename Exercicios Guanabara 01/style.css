@@ -7,27 +7,19 @@
 }
 
 body{
-    background-color: #031c29;
+    background-color: black;
     color: white;
     font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
 }
 
-.container{
-    text-align: center;
-    border: 1px solid #02527c;
-    background-color: rgb(196, 193, 193);
-    border-radius: 5px;
-    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.438);
-    width: 800px;
-    padding: 1rem 0;
+header{
+    margin: 0;
+    background-color: rgba(24, 24, 24, 0.644);
 }
 
-/* h1{
+header h1{
     font-weight: 800px;
     font-size: 50px;
     text-align: center;
@@ -37,33 +29,34 @@ body{
     -webkit-background-clip: text;
     color: transparent;
     animation: colorido 15s linear infinite;
-} */
+}
 
 @keyframes colorido {
     0%{background-position-x: 100%;}
     100%{background-position: 400%;}
 }
 
-
-#mensagem{
-    color: rgb(11, 87, 83);
-    font-weight: bold;
-    font-size: 25px;
+h2{
+    animation: rgb 5s linear infinite;
 }
 
-h1{
-    background: linear-gradient(45deg, #02264b,#014b71,#0096be,#00d4ff, #02264b);
-    -webkit-background-clip: text;
-    color: transparent;
-    background-size: 400% 100%;
-    font-weight: bold;
-    font-size: 50px;
-    animation: rafa 10s linear infinite;
+@keyframes rgb {
+    0%{color: white}
+    10%{color: red;}
+    20%{color: blue;}
+    30%{color: green;}
+    40%{color: yellow;}
+    50%{color: pink;}
+    60%{color: rgb(128, 49, 128);}
+    70%{color: purple;}
+    80%{color: coral;}
+    90%{color: orangered;}
+    100%{color: rgba(255, 217, 0, 0.747);}
 }
 
-@keyframes rafa {
-    0%{background-position-x: 100%;}
-    100%{background-position: 400%;}
+
+.testes{
+    padding: 0 .2rem;
 }
 
 
@@ -77,8 +70,4 @@ button{
     border: none;
     border-radius: 5px;
     box-shadow: 0px 2px 10px  rgba(255, 255, 255, 0.185);
-    margin-top: 10px;
-    padding: 10px;
 }
-
-
