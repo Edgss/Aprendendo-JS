@@ -11,6 +11,7 @@ function adicionarTarefa(){
     // Colocando o li em uma variavel para usar depois, pois ele tem que ser inserida 
     let novaTarefa = document.createElement("li")
 
+    //Conteúdo que irá receber o valor de tarefa
     novaTarefa.textContent = `${tarefa}`
     listaTarefas.appendChild(novaTarefa)
 
