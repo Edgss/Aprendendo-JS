@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1{
+    font-size: 50px;
+    background-image: linear-gradient(45deg, red, blue, green,yellow,orange,purple);
+    background-size: 400% 100%;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: color 6s linear infinite;
+}
+
+@keyframes color {
+    0%{background-position-x: 100%;}
+    100%{background-position: 400%;}
+}
+
+nav{
+    border-bottom: 1px solid rgba(31, 30, 30, 0.795);
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px 30px;
+    display: block;
+    transition: .2s;
+    position: relative;
+}
+
+nav ul li a:hover{
+    background-color: rgb(15, 15, 15);
+}
+
+.linha::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: yellow;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    transition: .5s;
+}
+
+.linha:hover::after{
+    width: 100%;
+}
+
+.menu{
+    position: relative;
+}
+
+.menu .dropdown{
+    position: absolute;
+    background-color:  rgb(15, 15, 15);
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    transition: .3s ease;
+}
+
+.menu:hover .dropdown{
+    height: 250px;
+    background-color: rgb(22, 21, 21);
+    z-index: 999;
+}
+
+
+.menu .dropdown a:hover{
+    animation: rgb 6s linear infinite;   
+}
+
+@keyframes rgb {
+    0%{color: white}
+    10%{color: red;}
+    20%{color: blue;}
+    30%{color: green;}
+    40%{color: yellow;}
+    50%{color: pink;}
+    60%{color: rgb(128, 49, 128);}
+    70%{color: purple;}
+    80%{color: coral;}
+    90%{color: orangered;}
+    100%{color: rgba(255, 217, 0, 0.747);}
+}
+
+/*Youtubers*/
+.influencia{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.influencia h2{
+    font-size: 40px;
+    padding: 1rem 0 0 0;
+    text-align: center;
+}
+.influencia h4{
+    font-size: 20px;
+    padding-bottom: .8rem;
+}
+.youtube{
+    color: yellow;
+    margin-top: 1rem;  
+    font-weight: bold;
+    text-decoration: none;
+
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid beige;
+}
+
+img:hover{transform: translateY(-10px);}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem;
+}
+
+.overflow {
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+    position: relative;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.overflow:hover{ transform: translateY(-10px);}
+
+
+.sinopses{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    left: 0;
+    top: 0;
+    padding: .5rem;
+    background-color: rgba(0, 0, 0, 0.897);
+    transition: .3s;
+    opacity: 0;
+}
+
+.sinopses:hover{
+    opacity: 1;
+}
+
+
+/* ADICIONAR TAREFAS COM JAVASCRIPT */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2{
+    font-size: 40px;
+    padding: 1rem 0 0 0;
+    text-align: center;
+}
+
+.container p{
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px black;
+    color: yellow;
+    padding: .5rem;
+}
+
+input[type="text"]{
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.445);
+    max-width: 380px;
+    width: 380px;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 18px;
+}
+
+input::placeholder{
+  font-size: 18px;
+  text-align: center;
+}
+
+.container button{
+    height: 40px;
+    width: 150px;
+    padding: 0 .5rem;
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.container ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1.5rem;
+}
+.container ul li{
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.445);
+    max-width: 380px;
+    width: 380px;
+    padding: 1rem 0;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+/*Barra de tarefas*/
+.populares{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.populares ul li {
+    align-items: center;
+    font-size: 18px;
+    margin: 10px 0;
+    list-style: none;
+}
+
+.populares h3{
+    text-align: center;
+}
+
+.barras{
+    display: block;
+    height: 20px;
+    width: 400px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.barras > span{
+    position: absolute;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.estudar{
+    width: 80%;
+    background-color: darkblue;
+    animation: barras1 3.8s linear   
+}
+@keyframes barras1 {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.animais{
+    width: 60%;
+    background-color: darkblue;
+    animation: barras2 3.5s linear   
+}
+@keyframes barras2 {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+.varrer{
+    width: 40%;
+    background-color: darkblue; 
+    animation: barras3 3s linear 
+}
+
+@keyframes barras3 {
+    0%{width: 0%;}
+    100%{width: 40%;}
+}
+
+.compras{
+    width: 30%;
+    background-color: darkblue;
+    animation: barras4 2s linear
+}
+
+@keyframes barras4 {
+    0%{width: 0%;}
+    100%{width: 30%;}
+}
+
+.marmita{
+    width: 20%;
+    background-color: darkblue;
+    animation: barras5 1.5s linear
+}
+
+@keyframes barras5 {
+    0%{width: 0%;}
+    100%{width: 20%;}
+}
+
+/*Footer*/
+footer{
+    text-align: center;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.redes ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 6px;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    cursor: pointer;
+    position: relative;
+    transition: .3s;
+    text-align: center;
+}
+
+.redes ul li:hover{
+    width: 110px;
+}
+
+.redes ul li:hover::before{
+    opacity: 1;
+}
+
+.redes ul li span {
+    position: absolute;
+}
+
+.redes ul li .icon{
+    font-size: 25px;
+    transition: .2s;
+}
+
+.redes ul li:hover .icon{
+    transform: scale(0);
+}
+
+.redes ul li .bi-instagram{color: rgb(207, 80, 207);}
+.redes ul li .bi-linkedin{color: blue;}
+.redes ul  li .bi-github{color: purple;}
+.redes ul li .bi-coin{color: gold;}
+
+.redes ul li .text{
+    font-size: 18px;
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .1s;
+    color: white;
+    font-weight: 400;
+    padding: .5rem;
+}
+
+.redes ul li:hover .text{
+    transform: scale(1);
+}
+
+.redes ul li::before{
+    content: "";
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    border-radius: 60px;
+    background-color: red;
+}
+
+.redes ul li.instagram:hover::before{
+    background-image: linear-gradient(45deg, #FFD200, #FF7A00, #FF1E56, #D70666, #ffd000c7);
+
+   background-size: 400% 100%;
+   animation: teste 5s linear infinite;
+}
+.redes ul li.github:hover::before{
+    background-image: linear-gradient(45deg,purple, #333333, purple);
+    background-size: 400% 100%;
+    animation: teste 5s linear infinite;
+ }
+ .redes ul li.linkedin:hover::before{
+    background-image: linear-gradient(45deg,#0077b5, #004471, #0077b5);
+    background-size: 400% 100%;
+    animation: teste 5s linear infinite;
+ }
+ .redes ul li.doacao:hover::before{
+    background-image: linear-gradient(45deg,#ffd700, #755303, #ffd700);
+    background-size: 400% 100%;
+    animation: teste 5s linear infinite;
+ }
+
+ @keyframes teste {
+    0%{background-position-x: 100%;}
+    100%{background-position: 400%;}
+ }

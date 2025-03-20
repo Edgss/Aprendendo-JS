@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <h1>Treinamento Completo</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="linha">Treinamento</a></li>
+                <li><a href="#" class="linha">Treinamento</a></li>
+                <li class="menu"><a href="#" class="linha">Treinamento</a>
+                    <div class="dropdown">
+                        <a href="#">Treino</a>
+                        <a href="#">Treino</a>
+                        <a href="#">Treino</a>
+                        <a href="#">Treino</a>
+                        <a href="#">Treino</a>
+                    </div>
+                    </li>
+                <li><a href="#" class="linha">Treinamento</a></li>
+                <li><a href="#" class="linha">Treinamento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="influencia">
+            <h2>Conhecimento adquirido por:</h2>
+
+            <div class="galeria">
+
+                <div class="overflow">
+                    <img src="rafa.jpg" alt="Rafaela Ballerini">
+                    <div class="sinopses">
+                        <h4>Rafa Ballerini</h4>
+                        <p>Engenheira de software e criadora de conteúdo focada em programação e carreira tech. Com um canal no YouTube repleto de tutoriais e dicas, Rafaella incentiva mulheres e iniciantes a entrarem na área de tecnologia, tornando o aprendizado mais acessível e motivador</p>
+                        <a href="https://www.youtube.com/RafaellaBallerini" class="youtube" target="_blank">Acesse aqui o canal</a>
+                    </div>
+                </div>
+
+                    <div class="overflow">
+                        <img src="guanabara.jpg" alt="Gustavo Guanabara">
+                        <div class="sinopses">
+                            <h4>Gustavo Guanabara</h4>
+                            <p>Professor e criador do Curso em Vídeo, um dos maiores canais de programação do Brasil. Reconhecido por seu jeito didático e descontraído de ensinar, ele já ajudou milhares de pessoas a entrarem no mundo da tecnologia com cursos gratuitos e acessíveis.</p>
+                            <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" class="youtube" target="_blank">Acesse aqui o canal</a>
+                        </div>
+                </div>
+
+                <div class="overflow">
+                    <img src="bruno.jpg" alt="Bruno Rodrigues">
+                    <div class="sinopses">
+                        <h4>Bruno Rodrigues</h4>
+                        <p>Desenvolvedor web especializado em criação de sites institucionais e landing pages, especialmente para psicólogos. Formado em Análise e Desenvolvimento de Sistemas, já liderou equipes de desenvolvimento e compartilha conhecimento no canal Inteliogia Dev's Insights, ajudando a comunidade dev a crescer.</p>
+                        <a href="https://www.youtube.com/@InteliogiaDev"  class="youtube" target="_blank">Acesse aqui o canal</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="lista">Lista de tarefas com JavaScript</h2>
+            <p id="mensagem1"></p>
+            <input type="text" id="entradaTarefas" placeholder="Escreva aqui">
+            <p id="mensagem2"></p>
+            <button onclick="adicionarTarefas()">Adicionar tarefa</button>
+            <ul id="listaTarefas"></ul>
+        </div>
+
+        <div class="populares">
+            <h2>Tarefas populares</h2>
+            <ul>
+                <li>
+                    <h3>Estudar</h3>
+                    <span class="barras"><span class="estudar"></span></span>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h3>Alimentar animais</h3>
+                    <span class="barras"><span class="animais"></span></span>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h3>Varrer a casa</h3>
+                    <span class="barras"><span class="varrer"></span></span>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h3>Fazer compras</h3>
+                    <span class="barras"><span class="compras"></span></span>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h3>Preparar marmita</h3>
+                    <span class="barras"><span class="marmita"></span></span>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <h3>Siga-me nas redes sociais:</h3>
+        <div class="redes">
+            <ul>
+                <a href="#">
+                    <li class="instagram">
+                        <span class="icon"><i class="bi-instagram"></i></span>
+                        <span class="text">Instagram</span>
+                    </li>
+                </a>
+            </ul>
+
+                <ul>
+                    <a href="#">
+                        <li class="github">
+                            <span class="icon"><i class="bi-github"></i></span>
+                            <span class="text">Github</span>
+                        </li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="#">
+                        <li class="linkedin">
+                            <span class="icon"><i class="bi-linkedin"></i></span>
+                            <span class="text">Linkedin</span>
+                        </li>
+                    </a>
+                </ul>
+
+                
+                <ul>
+                    <a href="#">
+                        <li class="doacao">
+                            <span class="icon"><i class="bi-coin"></i></span>
+                            <span class="text">Doação</span>
+                        </li>
+                    </a>
+                </ul>
+        </div>
+    </footer>
+</body>
+</html>
