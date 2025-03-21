@@ -224,6 +224,10 @@ input::placeholder{
   text-align: center;
 }
 
+#mensagem2{
+    font-size: 20px;
+}
+
 .container button{
     height: 40px;
     width: 150px;
@@ -235,6 +239,14 @@ input::placeholder{
     border: none;
     cursor: pointer;
 }
+
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
 .container ul{
     display: flex;
     flex-direction: column;
@@ -255,7 +267,11 @@ input::placeholder{
     display: flex;
 }
 
-
+#listaTarefas li{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
 /*Barra de tarefas*/
 .populares{
     display: flex;
@@ -278,7 +294,7 @@ input::placeholder{
 .barras{
     display: block;
     height: 20px;
-    width: 400px;
+    width: 500px;
     background-color: #ccc;
     border-radius: 10px;
     position: relative;
